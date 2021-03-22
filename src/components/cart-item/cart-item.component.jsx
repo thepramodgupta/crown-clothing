@@ -2,7 +2,9 @@ import React from 'react';
 
 import './cart-item.styles.scss';
 
-const CartItem = ({ item: {imageUrl, price, name, quanity} }) => (
+const CartItem = ({ item: {imageUrl, price, name, quanity} }) => {
+    console.log('called')
+    return (
     <div className="cart-item">
         <img src={imageUrl} alt="item"/>
         <div className="item-details">
@@ -10,6 +12,6 @@ const CartItem = ({ item: {imageUrl, price, name, quanity} }) => (
             <span className="price">{quanity} x ${price}</span>
         </div>
     </div>
-)
+)}
 
 export default CartItem;
