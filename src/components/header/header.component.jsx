@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { auth, createUserProfileDocument } from '../../firebase/firebase.utils';
+import { auth } from '../../firebase/firebase.utils';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 
